@@ -1,0 +1,352 @@
+/* This is a CSS comment. Put your CSS styling below this line */
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size:50px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  line-height: 1.5em;
+  letter-spacing: 0.2em;
+  text-align: justify;
+  padding:30px 0 0;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.backtop {
+  padding:30px 0 0;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.3em;
+}
+.backtop::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: crimson;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.backtop:hover::after {
+  width:100%;
+}
+.red {
+  color: crimson;
+}
+/* header menu */
+#headermenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  min-width: 500px;
+  top:0;
+  left:0;
+  background-color:#000;
+  position: fixed;
+  z-index: 1000;
+}
+#headermenu img {
+  height: 28px;
+  width: 128px;
+  margin-left: 20px;
+}
+#headermenu ul {
+  height: 50px;
+  overflow: hidden;
+}
+
+#headermenu li {
+  display: inline-block;
+  list-style: none;
+  float:left;
+}
+
+#headermenu li a {
+  white-space: nowrap;
+  font-variant: small-caps;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500; 
+  font-size: 1.2em;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  line-height: 47px;
+}
+
+#headermenu li::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: crimson;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+#headermenu li:hover::after {
+  width:100%;
+}
+
+/* end of header menu */
+
+/* main page  */
+#main {
+  flex-direction: column;
+  position: relative;
+  background-position: top center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(12, 4, 30, 0.7),rgba(4, 9, 30, 0.3)), url("background.jpg");
+  z-index: 0;
+}
+
+#main h1 {
+  margin: 50px auto 20px;
+  color: white;
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+#main h3 {
+  margin: 0 auto 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+}
+
+#main .mybtn {
+  display: inline-block;
+  max-width: 150px;
+  padding: 10px 30px;
+  margin: 20px auto;
+  background-color: transparent;
+  color: #fff;
+  text-align: center; 
+  font-weight: 700;
+  font-size: 14px;
+  border: 2px crimson solid;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  border-radius: 20px;
+}
+
+#main .mybtn:hover {
+  background-color:crimson;
+  transition: 1s;
+}
+/* end of main page  */
+
+/* intro section */
+#intro {
+  background-color:#fff;
+  padding: 0 50px;  
+}
+#intro .intro {
+  flex-direction: column;
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.intro h1::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: crimson;
+  display: block;
+  margin: auto;
+}
+#fun {
+  width: 8em;
+  float: left;  
+  color: white;
+  background: crimson;
+  padding: 1em;
+  margin: 30px 20px 10px 0;
+}
+#keepgoing {
+  width: 8em;
+  float: right;
+  color: white;
+  background: rgb(11, 122, 226);
+  padding: 1em;
+  margin: 30px 0 10px 20px;
+}
+.intro_bottom{
+  color: #000;
+  margin-top: 30px;
+}
+
+/* end of intro section */
+
+/* start of project section */
+#project {
+  padding: 50px 50px;
+  background-color: #fff; 
+}
+#project .project {
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+#project .gameplay {
+  color: red;
+  margin: 0 auto;
+}
+
+.gameplay h1::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #000;
+  display: block;
+  margin: auto;
+}
+#project .desc {
+  background-image: linear-gradient(rgba(12, 4, 30, 0.3),rgba(4, 9, 30, 0.3)), url("redshark1.png");
+  color: #fff;
+  background-position: top center;
+  background-size: cover;
+  border-radius: 10px;
+  margin-top:20px;
+  padding: 25px 50px;
+  box-shadow: inset 0 0 7px 5px #ddd;
+  text-align: left;
+  letter-spacing: 0.2em;
+}
+
+#project em{
+  color:#000;
+  font-weight: 600;
+}
+.desc li{
+  text-align: left;
+  padding: 0 0 15px 15px;
+}
+.startgame {
+  margin: 80px auto 20px;
+}
+.startgame a {
+  color: #fff;
+  font-weight: 500;
+  border: 1px #fff solid;
+  border-radius: 20px;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+.startgame a:hover {
+  background-color: crimson;
+}
+/* end of project section */
+
+/* footer */
+#ending {
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+#ending h6{
+  padding: 5px;
+}
+.icons{
+  color: #fff;
+}
+/* end of footer */
+/* start of contact form */
+
+.contact {
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+#map{
+  width: 100%;
+  height: auto;
+  flex: 40%;
+  
+}
+#map iframe {
+  width: 100%;
+  height: 100%;
+}
+#myform {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+  padding: 10px;
+}
+#myform h1{
+  margin-bottom: 10px;
+}
+
+#myform .textbox {
+  width: 100%;
+  height: 20px;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  border-bottom: 1px #777 solid;
+}
+#myform .textboxarea {
+  width: 100%;
+  height: 100px;
+  border: 1px #bcbcbc solid;
+  border-radius: 20px;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  resize: none;
+}
+#myform .formbtn {
+  width: 100%;
+  background: crimson;
+  color:#fff;
+  text-transform: uppercase;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  border-radius: 20px;
+  border: 1px #fff solid;
+}
+#myform .formbtn:hover {
+  background-color:#fff;
+  color: crimson;
+  border: 1px #000 solid;
+  transition: 1s;
+}
+
+/* end of contact form */
