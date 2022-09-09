@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  //text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+}
+/* Start of header */
+.green{
+  color: #04AA6D;
+}
+.purple{
+  color: rgb(130, 72, 229);
+}
+header {
+  padding: 15px;
+  background-color: #181172;
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0) linear-gradient(100.27deg, rgb(130, 72, 229) 4.01%, rgb(110, 218, 240) 48.76%, rgb(131, 220, 177) 99.47%) repeat scroll 0% 0%;
+  z-index: 0;
+}
+header img {
+  width: unset;
+  height: unset;
+  position: absolute;
+  left: 150px;
+  bottom: -150px;
+  z-index: -1;
+}
+
+/* End of header */
+/* Start of contents body */
+#contentsbody {
+  display: flex;
+  width: 100%;
+  min-height: 75vmin;
+}
+/* Start of left contents */
+.left { 
+  background-color: #2196F3;
+  background-image: url("https://cdn.glitch.global/f3d97f54-e306-495f-b941-ebe0d9e01dd2/thread_lavender.svg");
+  overflow: hidden;
+  padding: 20px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+  //border: 2px solid #000;
+}
+.project{
+  color: #fff;
+  margin-bottom: 20px;
+}
+#leftmenu {
+  display: inline-block;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  //flex-direction: column;
+  //border: #000 solid 2px;
+}
+#leftmenu li {
+  display: flex;
+  list-style: none;
+  //border: #000 solid 2px; 
+  //padding:15px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+#leftmenu li a {
+  font-variant: small-caps;
+  font-size: 1.2em;
+}
+.mybtn {
+  display: flex;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: #fff;
+  text-align: center; 
+  border: 2px rgb(130, 72, 229) solid;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  border-radius: 20px;
+}
+.mybtn:hover {
+  background-color:rgb(130, 72, 229);;
+  transition: 1s;
+  border: 2px #fff solid;
+}
+/* End of left contents */
+/* Start of center body */
+.main {
+  background-color: #f1f1f1;
+  padding: 20px;
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+  text-align: left;
+}
+.main h1::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #2196F3;
+  display: block;
+  margin-bottom: 15px;
+}
+.cards{
+  display: flex;
+  //flex: 1 1 0%;
+  flex-direction: column;
+  position: relative;
+  margin: 1.5rem auto;
+  border-radius: 1rem;
+  min-width: 320px;
+  background-color: rgb(130, 72, 229);
+  background-image: url("https://cdn.glitch.global/f3d97f54-e306-495f-b941-ebe0d9e01dd2/thread_lavender.svg");
+  background-size: 150%;
+  background-position: 100px center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  color: #fff;
+  padding: 1.2rem;
+}
+
+#aboutme {
+  text-align: left;
+  margin-bottom: 15px;
+}
+#myskills {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#myskillstitle {
+  //border: 2px #000 solid;
+}
+#specialize {
+  padding: 0 20px;
+}
+#skillimg {
+  //border: 2px #000 solid;
+  width: 130px;
+  height: 130px;
+  min-width: 130px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 222, 45) none repeat scroll 0% 0%;
+}
+
+#skillimg img {
+  height: 110px;
+  width: 110px;
+}
+#education {
+  //background-color: #04AA6D;
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0) linear-gradient(100.27deg, rgb(130, 72, 229) 4.01%, rgb(110, 218, 240) 48.76%, rgb(131, 220, 177) 99.47%) repeat scroll 0% 0%;
+  z-index: 0;
+}
+#education a:hover{
+  display: block;
+  color: transparent;
+  background: rgba(0, 0, 0, 0) linear-gradient(rgb(130, 72, 229) 0%, rgb(229, 72, 213) 100%) repeat scroll 0% 0% padding-box text;
+}
+#education img {
+  width: unset;
+  height: unset;
+  position: absolute;
+  left: 150px;
+  bottom: -150px;
+  z-index: -1;
+}
+/* End of center body */
+/* Start of right contents */
+#showcase {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.right {
+  background-color: #04AA6D;
+  background-image: url("https://cdn.glitch.global/f3d97f54-e306-495f-b941-ebe0d9e01dd2/thread_lavender.svg");
+  overflow: hidden;
+  padding: 30px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+.rightimg {
+  padding: 4px;
+  box-shadow: rgb(100, 48, 188) 0px 0px 12px;
+  background: rgba(0, 0, 0, 0) linear-gradient(rgb(130, 72, 229) 0%, rgb(229, 72, 213) 100%) repeat scroll 0% 0%;
+  margin-bottom: 20px;
+  border-radius: 1.25rem;
+}
+.rightimg img{
+  width: 100%;
+}
+#goals img {
+  width: 100%;
+  object-fit: cover;
+}
+/* End of right contents */
+/* End of contents body */
+/* footer */
+#ending {
+  height: 50px;
+  width: 100%;
+  //background-color: #181172;
+  background: rgba(0, 0, 0, 0) linear-gradient(100.27deg, rgb(130, 72, 229) 4.01%, rgb(110, 218, 240) 48.76%, rgb(131, 220, 177) 99.47%) repeat scroll 0% 0%;
+  color: #04AA6D;
+  text-align: center;
+}
+#ending h6{
+  padding: 5px;
+}
+.icons{
+  color: #fff;
+}
+/* end of footer */
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  #contentsbody {
+    display: inline-block;
+  }
+  #leftmenu li{
+    display: inline-block;
+  }
+}
