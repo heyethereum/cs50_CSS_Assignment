@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+body {
+  min-height: 100vh;
+}
+header {
+  color: #fff;
+  background-color: #000;
+}
+nav {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  /*   overflow: hidden; */
+}
+nav li {
+  display: inline-block;
+  list-style: none;
+  border: rgb(243, 12, 12) 2px solid;
+  border-radius: 20px;
+  padding: 10px 30px;
+  margin: 3px 80px;
+}
+nav li:hover {
+  background-color: rgb(243, 12, 12);
+}
+main {
+  height: 80vh;
+  display: block;
+}
+.left_content {
+  float: left;
+  width: 20%;
+}
+.right_content {
+  float: right;
+  width: 20%;
+  padding: 15px;
+}
+.main_content {
+  padding: 8px;
+  margin: 0 22%;
+}
+article {
+  margin: 10px;
+  text-align: left;
+  line-height: 1.5rem;
+}
+h2 {
+  text-align: left;
+}
+h2::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: rgb(245, 8, 8);
+  display: block;
+  margin-bottom: 15px;
+}
+.left_container {
+  padding: 5px;
+}
+h6 {
+  padding: 5px;
+  margin: 15px;
+}
+.rightimg {
+  padding: 2px;
+  box-shadow: rgb(100, 48, 188) 0px 0px 12px;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(rgb(245, 8, 8) 0%, rgb(205, 241, 25) 100%) repeat scroll 0%
+    0%;
+  margin-bottom: 20px;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+.rightimg img {
+  width: 100%;
+  border-radius: 1.25rem;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  border: 1px solid #000;
+}
+.red {
+  color: rgb(243, 12, 12);
+}
+#fun {
+  width: 8em;
+  float: left;
+  color: white;
+  background: rgb(11, 122, 226);
+  padding: 1em;
+  margin: 0 20px 10px 0;
+}
+.contact {
+  width: 80%;
+  max-width: 800px;
+  height: auto;
+  margin: 5px auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.form_div {
+  margin: 5px;
+}
+#map {
+  float: left;
+  flex: 40%;
+}
+#map iframe {
+  width: 100%;
+  height: 100%;
+}
+#myform {
+  float: right;
+  flex: 50%;
+}
+button {
+  width: 80%;
+  color: #fff;
+  font-weight: 700;
+  background: rgb(243, 12, 12);
+  padding: 5px;
+  border-radius: 20px;
+}
